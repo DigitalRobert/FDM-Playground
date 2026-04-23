@@ -1,32 +1,29 @@
-# FDM-Playground
-Numerical simulation of magnetic fields in a coil using the Finite Difference Method
+# Coil Magnetic Field - FDM Simulation
 
-This repository contains small experiments with finite difference method.
+## Status: work in progress
 
-Goal:
-- implement simple grid-based simulations in C++
+This project will contain:
 
-Focus is consistency and incremental development.
+- theory notes on magnetic field of a simple coil
+- analytical reference formulas (Biot-Savart, on-axis field)
+- finite difference method (FDM) discretisation
+- C++ simulation code
 
-This repo is a side project for small incremental practice.
+## Physics
 
-# FDM Discretisation (preview)
-
-The Poisson equation to be solved:
-
-$$
-\nabla^2 A_\phi = -\mu_0 J_\phi
-$$
-
-Discretised on a 2D grid (r, z half-plane):
+Simple circular coil, magnetostatic regime.
+Key equation to solve numerically:
 
 $$
-\frac{A_{i+1,j} - 2A_{i,j} + A_{i-1,j}}{\Delta r^2} 
-+ \frac{A_{i,j+1} - 2A_{i,j} + A_{i,j-1}}{\Delta z^2} 
-= -\mu_0 J_\phi
+B_z(z) = \frac{\mu_0 I R^2}{2(R^2 + z^2)^{3/2}}
 $$
 
-- `i, j` — grid indices in r and z direction  
-- `delta_r`, `delta_z` — grid spacing  
-- `A_phi` — azimuthal component of vector potential  
-- `J_phi` — current density of the coil
+## Next steps
+
+- [ ] theory folder with equations
+- [ ] FDM grid implementation in C++
+- [ ] validation against analytical solution
+
+## Built with
+
+C++ / standard library
