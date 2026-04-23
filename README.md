@@ -1,4 +1,5 @@
 # Coil Magnetic Field - FDM Simulation
+Finite Difference Method
 
 ## Status: work in progress
 
