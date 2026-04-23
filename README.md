@@ -11,13 +11,7 @@ Focus is consistency and incremental development.
 This repo is a side project for small incremental practice.
 
 
-## 2. Finite Difference Discretization
 
-Grid: \(r_i = i \Delta r\), \(z_j = j \Delta z\), with \(i=0..N_r\), \(j=0..N_z\).
-
-Let \(A_{i,j} = A_\phi(r_i, z_j)\).
-
-**Central differences** (interior points, \(i \ge 1\)) for the PDE:
 ## 2. Finite Difference Discretization
 
 Grid: $r_i = i \Delta r$, $z_j = j \Delta z$, with $i=0..N_r$, $j=0..N_z$.
