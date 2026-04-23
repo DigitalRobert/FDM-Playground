@@ -12,7 +12,7 @@ This repo is a side project for small incremental practice.
 
 
 
-## 2. Finite Difference Discretization
+## . Finite Difference Discretization
 
 Grid: $r_i = i \Delta r$, $z_j = j \Delta z$, with $i=0..N_r$, $j=0..N_z$.
 
