@@ -63,11 +63,11 @@ Note: the extra term A_phi / r^2 comes from cylindrical coordinates — not pres
 Grid indices: i along r, j along z. Spacing: delta_r, delta_z.
 
 $$
-\frac{A_{i+1,j} - 2A_{i,j} + A_{i-1,j}}{\Delta r^2}
-+ \frac{1}{r_i}\frac{A_{i+1,j} - A_{i-1,j}}{2\,\Delta r}
-- \frac{A_{i,j}}{{r_i}^2}
-+ \frac{A_{i,j+1} - 2A_{i,j} + A_{i,j-1}}{\Delta z^2}
-= -\mu_0 J_\phi
+\frac{A_{i+1,j} - 2A_{i,j} + A_{i-1,j}}{\Delta r^2}+
++ \frac{1}{r_i}\frac{A_{i+1,j} - A_{i-1,j}}{2\,\Delta r}+
+- \frac{A_{i,j}}{{r_i}^2}+
++ \frac{A_{i,j+1} - 2A_{i,j} + A_{i,j-1}}{\Delta z^2}+
+= -\mu_0 J_\phi+
 $$
 
 ---
